@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Calculadora Javascript</title>
+<link rel="stylesheet" href="bootstrap.min.css">
+<link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+	<div class="well" id="calculadora">
+		<h5>ZDFlower Calculator</h5>
+		<div class="well" id="display">0</div>
+		<div id="botonera">
+			<button id="zero" onclick="mostrarNumero(0)">0</button>
+			<button id="one" onclick="mostrarNumero(1)">1</button>
+			<button id="two" onclick="mostrarNumero(2)">2</button>
+			<button id="three" onclick="mostrarNumero(3)">3</button>
+			<button id="four" onclick="mostrarNumero(4)">4</button>
+			<button id="five" onclick="mostrarNumero(5)">5</button>
+			<button id="six" onclick="mostrarNumero(6)">6</button>
+			<button id="seven" onclick="mostrarNumero(7)">7</button>
+			<button id="eight" onclick="mostrarNumero(8)">8</button>
+			<button id="nine" onclick="mostrarNumero(9)">9</button>
+			<button id="decimal" onclick="mostrarNumero('.')">.</button>
+			<button id="add" onclick="mostrarOperacion('+')">+</button>
+			<button id="substract" onclick="mostrarOperacion('-')">-</button>
+			<button id="product" onclick="mostrarOperacion('*')">*</button>
+			<button id="divide" onclick="mostrarOperacion('/')">/</button>
+			<button id="clear" onclick="clearDisplayHistory()">CLEAR</button>
+			<button id="equals" onclick="resolver()">=</button>
+
+			<!--<button id="ce">CE</button>-->
+		</div>
+	</div>
+<script src="calc.js"></script>
+</body>
+</html>
