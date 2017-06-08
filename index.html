@@ -3,42 +3,46 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Calculadora Javascript</title>  
-  <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
-  <link rel="stylesheet" href="css/style.css">
-<!--  <link rel="stylesheet" href="css/bootstrap.min.css">
--->
+<title>Calculadora Javascript</title>
+<link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
+
+<!--<link rel="stylesheet" href="bootstrap.min.css">-->
+<link rel="stylesheet" href="css/style.css"/>
 </head>
-
 <body>
-  	  <div class="well" id="calculadora">
+
+	<div class="well" id="calculadora">
 		<h5>ZDFlower Calculator</h5>
-		<div class="well-sm" id="display">0</div>
-		<!--¿cómo ubico los botones como en una calculadora? -->
+		<div class="well" id="display">0</div>
 		<div id="botonera">
-	      <button class="btn btn-secondary btn-sm" id="clear" onclick="clearDisplayHistory()">CLEAR</button>
-          <button class="btn btn-secondary btn-sm" id="divide" onclick="mostrarOperacion('/')">/</button>
-	    
-	      <button class="btn btn-secondary btn-sm" id="nine" onclick="mostrarNumero(9)">9</button>
-		  <button class="btn btn-secondary btn-sm" id="eight" onclick="mostrarNumero(8)">8</button>
-		  <button class="btn btn-secondary btn-sm" id="seven" onclick="mostrarNumero(7)">7</button>
-		  <button class="btn btn-secondary btn-sm" id="six" onclick="mostrarNumero(6)">6</button>
-		  <button class="btn btn-secondary btn-sm" id="five" onclick="mostrarNumero(5)">5</button>
-		  <button class="btn btn-secondary btn-sm" id="four" onclick="mostrarNumero(4)">4</button>
-		  <button class="btn btn-secondary btn-sm" id="three" onclick="mostrarNumero(3)">3</button>
-		  <button class="btn btn-secondary btn-sm" id="two" onclick="mostrarNumero(2)">2</button>
-		  <button class="btn btn-secondary btn-sm" id="one" onclick="mostrarNumero(1)">1</button>
-					
-		  <button class="btn btn-secondary btn-sm" id="add" onclick="mostrarOperacion('+')">+</button>
-		  <button class="btn btn-secondary btn-sm" id="substract" onclick="mostrarOperacion('-')">-</button>
-		  <button class="btn btn-secondary btn-sm" id="product" onclick="mostrarOperacion('*')">*</button>
+		<div class="solo">
+			<button id="clear" onclick="clearDisplayHistory()">CLEAR</button>
+		</div>
+		<div class="tresportres">
+			<button id="one" onclick="mostrarNumero(1)">1</button>
+			<button id="two" onclick="mostrarNumero(2)">2</button>
+			<button id="three" onclick="mostrarNumero(3)">3</button>
+			<button id="four" onclick="mostrarNumero(4)">4</button>
+			<button id="five" onclick="mostrarNumero(5)">5</button>
+			<button id="six" onclick="mostrarNumero(6)">6</button>
+			<button id="seven" onclick="mostrarNumero(7)">7</button>
+			<button id="eight" onclick="mostrarNumero(8)">8</button>
+			<button id="nine" onclick="mostrarNumero(9)">9</button>
+		</div>
+		<div class="operadores">
+			<button class="operador" id="add" onclick="mostrarOperacion('+')">+</button>
+			<button class="operador" id="substract" onclick="mostrarOperacion('-')">-</button>
+			<button class="operador" id="product" onclick="mostrarOperacion('*')">*</button>
+			<button class="operador" id="divide" onclick="mostrarOperacion('/')">/</button>
+		</div>
+		<div class="tres-abajo">
+			<button id="zero" onclick="mostrarNumero(0)">0</button>
+			<button id="decimal" onclick="mostrarNumero('.')">.</button>
+			<button id="equals" onclick="resolver()">=</button>
+		</div>
+		</div>
+	</div>
 
-		  <button class="btn btn-secondary btn-sm" id="decimal" onclick="mostrarNumero('.')">.</button>
-		  <button class="btn btn-secondary btn-sm" id="zero" onclick="mostrarNumero(0)">0</button>
-		  <button class="btn btn-secondary btn-sm" id="equals" onclick="resolver()">=</button>
-        </div>
-    </div>
-    <script src="js/index.js"></script>
-
+<script src="js/index.js"></script>
 </body>
 </html>
