@@ -1,35 +1,80 @@
+/*
+me gustaría usar una tipografía más parecida a la de una calculadora
+*/
+
+/* testear cuán responsive es, cómo se vería en un celular */
+
+h5 {
+  font-weight: bold;
+}
+
+
 #calculadora  {
 	background-color: DarkGray;
-	width: 250px;
+	width: 180px;
 	height: 280px;
 	box-shadow: 2px 2px 2px 1px black;
-	text-align: center;
-	margin: 10% auto;
+	position: relative;
+	margin: 5% auto;
 }
 
 #display {
 	background-color: LightGreen;
-	width: 200px;
+	width: 140px;
+	height: 25px;
 	text-align: right;
 	box-shadow: 2px 2px 2px 1px black inset;
 	padding-right: 2px;
-  padding-bottom: 2px;
-  margin: 6px;
+}
+
+.well #display {
+  padding: 5px;;
 }
 
 #botonera {
-	height: 250px;
-	width: 200;
-	margin: 10px;
+   /*background-color: red;*/
+   position: relative;
+   top: 0%;
+   height: 150px;
+   font-size: 14pt;
 }
 
+.tresportres {
+  position: absolute;
+  top: 19%;
+  left: 0%;
+  width: 80%;
+  padding: 0px;
+  /*background-color: green;*/
+}
 
-#botonera button {
-	margin: 2px;
-	box-shadow: 1px 1px 2px 1px black;
+.tres-abajo {
+  position: absolute;	
+  bottom: 0%;
+  left: 0%;
+  /*background-color: purple;*/
 }
-/*
-#botonera button #clear {
-	
+
+.operadores {
+  position: absolute;
+  bottom: 0%;
+  right: 0%;
+  width: 22%;
+  /*background-color: yellow;*/
 }
-*/
+
+button {
+  width: 30px;
+  height: 30px;
+}
+
+#clear {
+  font-size: 10pt;
+} 
+
+.solo button {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 28px;
+}
