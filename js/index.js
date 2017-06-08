@@ -1,3 +1,6 @@
+/*
+falta evitar que los números que son más largos que el display sigan de largo por toda la página */
+
 var expresion = "";
 var display;
 function mostrarNumero(num){
@@ -11,7 +14,7 @@ function mostrarNumero(num){
 	  if(num == '.'){
 	    expresion = String(expresion).concat(String(num));
 	  }
-	  else {
+	  else if (num !== 0){//acá ver si num no es otro 0, si comparaba con '0' no lo detectaba.
 	    expresion = num;
 	  }
 	} else {
