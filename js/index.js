@@ -8,16 +8,19 @@ function mostrarNumero(num){
 	
 	if (expresion === ""){
 	  expresion = "0";
-	}
-	
+	}	
 	if (expresion === "0"){
+    console.log("expresion era 0");
 	  if(num == '.'){
+      console.log("num es .");
 	    expresion = String(expresion).concat(String(num));
 	  }
-	  else if (num !== 0){//acá ver si num no es otro 0, si comparaba con '0' no lo detectaba.
+	  else if (num !== 0){ //acá ver si num no es otro 0, si comparaba con '0' no lo detectaba.
+      console.log('num no es 0, es: ' + num);
 	    expresion = num;
-	  }
+	  } // si num es otro 0 no hace nada
 	} else {
+    console.log("expresion no era 0");
     //chequear si la expresión ya tenía un '.', 
     //hay que distinguir si el punto está en un mismo operando o no.
     if(num != '.'){
