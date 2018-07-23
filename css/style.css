@@ -38,6 +38,10 @@ body {
 }
 
 #botonera {
+  position: relative;
+  top: 0%;
+  height: 180px;
+  font-size: 14pt;
   margin: 15px;
 }
 
