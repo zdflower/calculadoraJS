@@ -1,26 +1,24 @@
 <!DOCTYPE html>
-<html >
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Calculadora</title>
-  <title>Calculadora Javascript</title>
+  <title>New Calculator Javascript</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<!--  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 
-  <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
--->
-<!--<link rel="stylesheet" href="css/bootstrap.min.css">-->
-      <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 
+<link rel="stylesheet" href="css/style.css">
   
 </head>
 
 <body>
-    	<div id="calculadora">
-		<h4>ZDFlower Calculator</h4>
+    <div id="calculadora">
+		<p><strong>Calculator</strong></p>
 		<div id="display">0</div>
 		<div id="botonera">
-		<div class="solo"><button id="clear" onclick="clearDisplayHistory()">CLEAR</button></div><!--
+		<div class="solo">
+			<button id="clear" onclick="clearDisplayHistory()">CLEAR</button>
+		</div><!--
 		--><div class="tresportres">
 			<button id="one" onclick="mostrarNumero(1)">1</button>
 			<button id="two" onclick="mostrarNumero(2)">2</button>
@@ -34,8 +32,8 @@
 		</div><!--
 		--><div class="operadores">
 			<button class="operador" id="add" onclick="mostrarOperacion('+')">+</button>
-			<button class="operador" id="substract" onclick="mostrarOperacion('-')">-</button>
-			<button class="operador" id="product" onclick="mostrarOperacion('*')">*</button>
+			<button class="operador" id="subtract" onclick="mostrarOperacion('-')">-</button>
+			<button class="operador" id="multiply" onclick="mostrarOperacion('*')">*</button>
 			<button class="operador" id="divide" onclick="mostrarOperacion('/')">/</button>
 		</div><!--
 		--><div class="tres-abajo">
@@ -47,6 +45,7 @@
 	</div>
   
     <script src="js/index.js"></script>
-
+		
+		<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 </html>
